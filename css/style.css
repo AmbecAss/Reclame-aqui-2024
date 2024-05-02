@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: #0b2675;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Back{
+    width: 100%;
+    min-height: 40vh;
+    background-image: url(../img/Banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 1s;
+}
+
+.Logo{
+    background-image: url(../img/Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    min-height: 70px;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    padding: 0 50px;
+    transition: 1s;
+    h1, h2{
+        font-weight: 300;
+        color: #fff;transition: 1s;
+    }
+    h1{
+        font-size: 18px;transition: 1s;
+    }
+    h2{
+        font-size: 18px;transition: 1s;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .Back{transition: 1s;
+        width: 100%;
+        min-height: 40vh;
+        background-image: url(../img/Banner.png);
+        background-size: cover;
+        background-position: center center;
+    }
+  }
+  @media (max-width: 768px) {
+    .Back{transition: 1s;
+        width: 100%;
+        min-height: 30vh;
+        background-image: url(../img/Banner.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .txt{
+        padding: 0 25px;
+        h1{
+            font-size: 18px;transition: 1s;
+        }
+        h2{
+            font-size: 18px;transition: 1s;
+        }
+    }
+  }
+  @media (max-width: 425px) {
+    .Back{transition: 1s;
+        width: 100%;
+        min-height: 20vh;
+        background-image: url(../img/Banner.png);
+        background-size: cover;
+        background-position: center center;
+    }
+    .txt{
+    h1{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 16px;
+    }
+        padding: 0 20px;
+    }
+  }
